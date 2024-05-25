@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnam Map with Provinces</title>
+    <style>
+        .map-container {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .province {
+            font-size: 0.5rem;
+            fill: black;
+            cursor: pointer;
+        }
+
+        .province:hover {
+            fill: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="map-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+            <!-- Đây là ví dụ về bản đồ SVG, bạn có thể cần tải bản đồ thực sự từ nguồn bên ngoài -->
+            <path d="M0,0 L800,0 L800,1000 L0,1000 Z" fill="#f0f0f0"/>
+            <!-- Tên các tỉnh (thay thế tọa độ và các tỉnh thực tế) -->
+            <a xlink:href="https://example.com/hanoi">
+                <text x="100" y="200" class="province">Hà Nội</text>
+            </a>
+            <a xlink:href="https://example.com/hochiminh">
+                <text x="200" y="300" class="province">TP. Hồ Chí Minh</text>
+            </a>
+            <!-- Thêm các tỉnh khác ở đây -->
+        </svg>
+    </div>
+</body>
+</html>
